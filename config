@@ -1,10 +1,19 @@
-# This is a basic i3 configuration file
+# upside-tiles i3 configuration ~/.config/i3/config
+# Author @its-me-mayday | email: lucamaggio1992@gmail.com
 
 # Set mod key (LEADER) to the Super/Windows key
 set $mod Mod4
 
 # Font for i3bar and window titles
 font pango:monospace 10
+
+# Remove top title border
+default_border pixel 0
+default_floating_border pixel 0
+
+# Add gaps
+gaps inner 10
+gaps outer 10
 
 # Use Alacritty as the default terminal
 bindsym $mod+Return exec alacritty
@@ -50,6 +59,9 @@ bindsym $mod+Shift+c reload
 
 # Exit i3
 bindsym $mod+Shift+e exec --no-startup-id i3-msg exit
+
+# Background
+exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arch.jpg
 
 # Workspace switching
 bindsym $mod+1 workspace 1
