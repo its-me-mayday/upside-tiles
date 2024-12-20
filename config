@@ -75,7 +75,7 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
-exec_always ~/.config/polybar.sh &
+exec_always ~/.config/i3/polybar.sh &
 
 # Enable picom (transparency)
 exec --no-startup-id picom --config ~/.config/picom/picom.conf &
