@@ -75,8 +75,10 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
+exec_always ~/.config/polybar.sh &
+
 # Start i3bar (status bar)
-bar {
-    status_command i3status
-}
+#bar {
+#    status_command example
+#}
 
