@@ -61,7 +61,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec --no-startup-id i3-msg exit
 
 # Background
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arch.jpg
+exec --no-startup-id feh --bg-fill ~/.config/i3/utility/background.jpg
 
 # Workspace switching
 bindsym $mod+1 workspace 1
@@ -75,13 +75,7 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
-exec_always ~/.config/i3/polybar.sh &
+exec_always ~/.config/i3/utility/polybar-launcher.sh &
 
 # Enable picom (transparency)
 exec --no-startup-id picom --config ~/.config/picom/picom.conf &
-
-# Start i3bar (status bar)
-#bar {
-#    status_command example
-#}
-
