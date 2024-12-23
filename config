@@ -20,6 +20,7 @@ bindsym $mod+Return exec alacritty
 
 # Use Google Chrome as default browser
 bindsym $mod+F2 exec --no-startup-id google-chrome-stable
+bindsym $mod+F3 exec --no-startup-id brave
 
 # Kill focused window
 bindsym $mod+Shift+q kill
@@ -82,3 +83,7 @@ exec --no-startup-id picom --config ~/.config/picom/picom.conf &
 
 # Enable floating sticky notes
 for_window [class="xpad"] floating enable
+
+# Enable rofi
+bindsym $mod+d exec rofi -show run
+for_window [class="rofi"] floating enable
