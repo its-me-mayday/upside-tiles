@@ -32,10 +32,10 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # Move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
 # Toggle floating mode
 bindsym $mod+Shift+space floating toggle
@@ -87,3 +87,6 @@ for_window [class="xpad"] floating enable
 # Enable rofi
 bindsym $mod+d exec rofi -show run
 for_window [class="rofi"] floating enable
+
+# Enable i3-lock
+bindsym $mod+Shift+l exec i3lock
