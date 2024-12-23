@@ -79,3 +79,6 @@ exec_always ~/.config/i3/utility/polybar-launcher.sh &
 
 # Enable picom (transparency)
 exec --no-startup-id picom --config ~/.config/picom/picom.conf &
+
+# Enable floating sticky notes
+for_window [class="xpad"] floating enable
